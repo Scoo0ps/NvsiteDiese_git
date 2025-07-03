@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diese - Accueil</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="images/logos/logo_diese_bleu.png" type="image/png">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="index.html" class="nav-item">Accueil</a>
+            <a href="about.html" class="nav-item">Qui sommes-nous</a>
+            <a href="services.html" class="nav-item">Offres</a>
+        </div>
+        
+        <a href="index.html" class="logo">
+            <img src="images/logos/logo_diese_blanc.png" alt="Logo Diese">
+        </a>
+        
+        <div class="nav-right">
+            <a href="portfolio.html" class="nav-item">Portfolio</a>
+            <a href="news.html" class="nav-item">Actualités</a>
+            <a href="contact.html" class="nav-item">Contact</a>
+        </div>
+        
+        <!-- Mobile navigation container -->
+        <div class="mobile-nav">
+            <a href="about.html" class="nav-item">Qui sommes-nous</a>
+            <a href="services.html" class="nav-item">Offres</a>
+            <a href="portfolio.html" class="nav-item">Portfolio</a>
+            <a href="news.html" class="nav-item">Actualités</a>
+            <a href="contact.html" class="nav-item">Contact</a>
+        </div>
+        
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    
+    <section class="hero">
+        <h1>REALISEZ VOS PROJETS DE DEMAIN</h1>
+        <h2>Avec Dièse Junior Conseil</h2>
+        <p>Du développement web à l'intelligence artificielle, profitez dès aujourd'hui des compétences des étudiants de Dièse Junior Conseil pour concrétiser vos projets numériques.</p>
+        <a href="contact.html" class="cta-button">Lancer votre projet</a>
+        
+        <!-- New Statistics Section - moved here -->
+        <section id="statistics" class="statistics-section">
+            <div class="statistics-container">
+                <div class="stats-grid">
+                    <div class="stat-item" data-number="44" data-suffix=" ans">
+                        <div class="stat-number">0</div>
+                        <div class="stat-label">D'expérience</div>
+                    </div>
+                    
+                    <div class="stat-item" data-number="1000" data-suffix="+">
+                        <div class="stat-number">0</div>
+                        <div class="stat-label">Projets réalisés</div>
+                    </div>
+                    
+                    <div class="stat-item" data-number="98" data-suffix="%">
+                        <div class="stat-number">0</div>
+                        <div class="stat-label">Clients satisfaits</div>
+                    </div>
+                    
+                    <div class="stat-item" data-number="24" data-suffix="h">
+                        <div class="stat-number">0</div>
+                        <div class="stat-label">Délai de réponse</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <div class="scroll-down-arrow">
+        <a href="#services">
+            <img src="images/arrow-large--down_white.svg" alt="Scroll down">
+        </a>
+    </div>
+
+    <section id="services" class="services-section">
+        <div class="services-container">
+            <!-- Tabs -->
+            <div class="tabs">
+                <button class="tab active" data-target="data-ia">DATA & IA</button>
+                <button class="tab" data-target="dev">DÉVELOPPEMENT WEB, MOBILE ET LOGICIEL</button>
+                <button class="tab" data-target="hpc">HIGH PERFORMANCE COMPUTING</button>
+                <button class="tab" data-target="réseaux">RÉSEAUX</button>
+            </div>
+
+            <!-- Content Panels -->
+            <div class="content-wrapper">
+                <div class="content-panel active" id="data-ia">
+                    <h2>Exploitez la puissance des données et de l'IA</h2>
+                    <p>Dièse Junior Conseil analyse vos données et construit des solutions d'IA sur mesure pour vous donner un avantage concurrentiel et optimiser vos décisions stratégiques.</p>
+                    <div class="panel-container">
+                        <div class="grid-container">
+                            <div class="grid">
+                                <div class="grid-item" data-item="machine-learning" data-image="images/icons/machine-learning.svg">Machine Learning</div>
+                                <div class="grid-item" data-item="virutal-assistant" data-image="images/icons/virtual-assistant.svg">Assistant virtuel</div>
+                                <div class="grid-item" data-item="computer-vision" data-image="images/icons/computer-vision.svg">Computer Vision</div>
+                                <div class="grid-item" data-item="predictive-analysis" data-image="images/icons/predictive-analysis.svg">Analyse prédictive</div>
+                            </div>
+                            
+                            <!-- Move CTA inside grid-container -->
+                            <div class="cta">
+                                <a href="services.html" class="btn-primary">En savoir plus</a>
+                                <a href="#" class="btn-secondary">Téléchargez la plaquette</a>
+                            </div>
+                        </div>
+                        <div class="grid-item-details">
+                            <img src="images/services/data-ia-icon.png" alt="Service icon" class="service-icon">
+                            
+                            <!-- Machine Learning specific details -->
+                            <ul class="details-list item-details" data-for="machine-learning">
+                                <li><i class="fas fa-check-circle"></i> Implémentation d'algorithmes d'apprentissage automatique pour analyser des données complexes.</li>
+                                <li><i class="fas fa-check-circle"></i> Création de modèles prédictifs performants adaptés à votre secteur d'activité.</li>
+                                <li><i class="fas fa-check-circle"></i> Amélioration continue des performances grâce à l'apprentissage itératif.</li>
+                                <li><i class="fas fa-lightbulb"></i> Applications : détection de fraude, prévision des ventes, segmentation client.</li>
+                            </ul>
+                            
+                            <!-- Assistant virtuel specific details -->
+                            <ul class="details-list item-details" data-for="virutal-assistant">
+                                <li><i class="fas fa-check-circle"></i> Conception d'assistants virtuels intelligents pour améliorer l'expérience client.</li>
+                                <li><i class="fas fa-check-circle"></i> Automatisation des interactions et des réponses aux questions fréquentes.</li>
+                                <li><i class="fas fa-check-circle"></i> Intégration avec vos systèmes existants (CRM, ERP, site web).</li>
+                                <li><i class="fas fa-lightbulb"></i> Technologies : chatbots, traitement du langage naturel, apprentissage par renforcement.</li>
+                            </ul>
+                            
+                            <!-- Computer Vision specific details -->
+                            <ul class="details-list item-details" data-for="computer-vision">
+                                <li><i class="fas fa-check-circle"></i> Analyse et interprétation automatique d'images et de vidéos.</li>
+                                <li><i class="fas fa-check-circle"></i> Développement de systèmes de reconnaissance d'objets, de visages ou de mouvements.</li>
+                                <li><i class="fas fa-check-circle"></i> Optimisation des algorithmes pour fonctionner en temps réel.</li>
+                                <li><i class="fas fa-lightbulb"></i> Applications : contrôle qualité, sécurité, diagnostic médical assisté.</li>
+                            </ul>
+                            
+                            <!-- Analyse prédictive specific details -->
+                            <ul class="details-list item-details" data-for="predictive-analysis">
+                                <li><i class="fas fa-check-circle"></i> Anticipation des tendances futures basée sur l'analyse de données historiques.</li>
+                                <li><i class="fas fa-check-circle"></i> Identification des facteurs clés influençant vos indicateurs de performance.</li>
+                                <li><i class="fas fa-check-circle"></i> Création de tableaux de bord interactifs pour le suivi des prédictions.</li>
+                                <li><i class="fas fa-lightbulb"></i> Secteurs : finance, retail, industrie, énergie, santé.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-panel" id="dev">
+                    <h2>Créez des applications performantes pour tous supports</h2>
+                    <p>Notre équipe conçoit et développe des sites web, applications mobiles et logiciels qui répondent parfaitement à vos besoins tout en offrant une expérience utilisateur optimale.</p>
+                    <div class="panel-container">
+                        <div class="grid-container">
+                            <div class="grid">
+                                <div class="grid-item" data-info="Création de sites web modernes, réactifs et optimisés pour tous les appareils avec les dernières technologies front-end et back-end." data-image="images/icons/captive_portal_64.svg">Développement web</div>
+                                <div class="grid-item" data-info="Conception d'applications mobiles natives ou hybrides pour iOS et Android, offrant des performances optimales et une expérience utilisateur fluide." data-image="images/icons/mobile_code_64.svg">Applications mobiles</div>
+                                <div class="grid-item" data-info="Développement de logiciels personnalisés adaptés à vos processus d'entreprise spécifiques et à vos exigences fonctionnelles." data-image="images/icons/developer_mode_tv_64.svg">Logiciels sur mesure</div>
+                                <div class="grid-item" data-info="Création d'interfaces intuitives et ergonomiques qui améliorent l'expérience utilisateur et optimisent l'engagement client." data-image="images/services/ux-icon.png">Interface utilisateur/UX</div>
+                            </div>
+                        </div>
+                        <div class="grid-item-details">
+                            <img src="images/services/dev-icon.png" alt="Service icon" class="service-icon">
+                            <ul class="details-list">
+                                <li><i class="fas fa-check-circle"></i>Applications web responsive (iOs / Android)</li>
+                                <li><i class="fas fa-check-circle"></i>Front end et back end modernes (HTML, CSS, JS, React...)</li>
+                                <li><i class="fas fa-check-circle"></i>Intégration de systèmes et API</li>
+                                <li><i class="fas fa-lightbulb"></i> Technologies : React, Angular, Node.js, Python, PHP.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-panel" id="hpc">
+                    <h2>Bâtissez le futur à l'ère du Big Data</h2>
+                    <p>Dièse Junior Conseil conçoit des solutions HPC sur mesure pour accélérer vos calculs, optimiser vos algorithmes et exploiter toute la puissance du calcul parallèle.</p>
+                    <div class="panel-container">
+                        <div class="grid-container">
+                            <div class="grid">
+                                <div class="grid-item" data-info="Optimisation de vos codes pour exploiter pleinement le calcul parallèle via MPI, OpenMP ou CUDA, réduisant drastiquement vos temps de calcul." data-image="images/icons/calculate_64.svg">Optimisation pour calcul parallèle</div>
+                                <div class="grid-item" data-info="Nous adaptons vos applications pour une exécution performante sur clusters ou plateformes cloud, en assurant portabilité et efficacité." data-image="images/icons/cloud_64.svg">Portage vers cluster ou cloud</div>
+                                <div class="grid-item" data-info="Nous développons des outils sur mesure pour analyser, transformer et visualiser vos données scientifiques à grande échelle." data-image="images/icons/database_64.svg">Traitement et visualisation Big Data</div>
+                                <div class="grid-item" data-info="Nous créons des interfaces et outils dédiés pour faciliter la soumission, le suivi et la gestion de vos simulations sur HPC." data-image="images/icons/build_64.svg">Outils métiers pour le HPC</div>
+                            </div>
+                        </div>
+                        <div class="grid-item-details">
+                            <img src="images/services/hpc-icon.png" alt="Service icon" class="service-icon">
+                            <ul class="details-list">
+                                <li><i class="fas fa-check-circle"></i> Sélectionnez un service pour plus d'informations</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-panel" id="réseaux">
+                    <h2>Boostez la puissance et la sécurité de vos réseaux</h2>
+                    <p>Nous vous accompagnons dans la conception, la sécurisation et l'optimisation de vos infrastructures réseau, avec des solutions fiables, performantes et adaptées à vos besoins.</p>
+                    <div class="panel-container">
+                        <div class="grid-container">
+                            <div class="grid">
+                                <div class="grid-item" data-info="Nous analysons l'état de vos infrastructures réseau, identifions les points de congestion ou de panne, et mettons en place des outils de monitoring." data-image="images/icons/router_64.svg">Audit et supervision réseau</div>
+                                <div class="grid-item" data-info="Nous concevons des infrastructures réseau robustes, évolutives et adaptées à vos besoins métiers, incluant segmentation, routage et haute disponibilité." data-image="images/icons/architecture_64.svg">Conception d'architectures réseau</div>
+                                <div class="grid-item" data-info="Nous réalisons des audits de sécurité (pare-feux, VLAN, VPN, IDS), mettons en œuvre des politiques de sécurité réseau et assurons une veille sur les vulnérabilités." data-image="images/icons/lock_64.svg">Sécurité des infrastructures</div>
+                            </div>
+                        </div>
+                        <div class="grid-item-details">
+                            <img src="images/services/reseaux-icon.png" alt="Service icon" class="service-icon">
+                            <ul class="details-list">
+                                <li><i class="fas fa-check-circle"></i> Sélectionnez un service pour plus d'informations</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Method Section - Add this between services and footer -->
+    <section id="method" class="method-section">
+        <div class="method-container">
+            <h2>Notre méthode de travail</h2>
+            <p>Un processus structuré pour garantir le succès de votre projet</p>
+            
+            <ul class="c-method--list">
+                <li data-step="1" data-bg="images/method/contact.jpg">
+                    <div class="method-content">
+                        <span class="step-number">01</span>
+                        <h3>Prise de contact</h3>
+                        <p>Premier échange pour comprendre votre vision</p>
+                    </div>
+                </li>
+                <li data-step="2" data-bg="images/method/meeting.jpg">
+                    <div class="method-content">
+                        <span class="step-number">02</span>
+                        <h3>Première réunion</h3>
+                        <p>Rencontre approfondie pour définir les objectifs</p>
+                    </div>
+                </li>
+                <li data-step="3" data-bg="images/method/analysis.jpg">
+                    <div class="method-content">
+                        <span class="step-number">03</span>
+                        <h3>Définition des besoins</h3>
+                        <p>Analyse détaillée de vos exigences techniques</p>
+                    </div>
+                </li>
+                <li data-step="4" data-bg="images/method/contract.jpg">
+                    <div class="method-content">
+                        <span class="step-number">04</span>
+                        <h3>Convention & Propositions</h3>
+                        <p>Formalisation du projet et proposition technique</p>
+                    </div>
+                </li>
+                <li data-step="5" data-bg="images/method/development.jpg">
+                    <div class="method-content">
+                        <span class="step-number">05</span>
+                        <h3>Sprints de travail</h3>
+                        <p>Développement agile avec suivi régulier</p>
+                    </div>
+                </li>
+                <li data-step="6" data-bg="images/method/delivery.jpg">
+                    <div class="method-content">
+                        <span class="step-number">06</span>
+                        <h3>Rendu du livrable</h3>
+                        <p>Livraison finale et accompagnement</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Dièse Junior Conseil</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 1 square de la Résistance, 91000 Évry-Courcouronnes</p>
+                <p><i class="fas fa-phone"></i> +33 1 69 33 40 00</p>
+                <p><i class="fas fa-envelope"></i> contact@diese.org</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Réseaux sociaux</h3>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/company/diese-junior-conseil/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://instagram.com/diesejuniorconseil" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-nav">
+            <a href="index.html">Accueil</a>
+            <a href="about.html">Qui sommes-nous</a>
+            <a href="services.html">Offres</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="news.html">Actualités</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Dièse Junior Conseil. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for navbar hiding on scroll -->
+    <script>
+        let lastScrollTop = 0;
+        const navbar = document.querySelector('.navbar');
+        
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > lastScrollTop) {
+                // Scrolling down
+                navbar.classList.add('navbar-hidden');
+            } else {
+                // Scrolling up
+                navbar.classList.remove('navbar-hidden');
+            }
+            
+            lastScrollTop = scrollTop;
+        });
+    </script>
+    
+    <!-- JavaScript for tabs and grid items -->
+    <script>
+        // Mobile menu toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const mobileNav = document.querySelector('.mobile-nav');
+            
+            if (menuToggle && mobileNav) {
+                menuToggle.addEventListener('click', function() {
+                    mobileNav.classList.toggle('active');
+                    menuToggle.classList.toggle('active');
+                    
+                    // Prevent body scroll when menu is open
+                    if (mobileNav.classList.contains('active')) {
+                        document.body.style.overflow = 'hidden';
+                    } else {
+                        document.body.style.overflow = '';
+                    }
+                });
+                
+                // Close menu when clicking on a link
+                const navLinks = mobileNav.querySelectorAll('.nav-item');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        mobileNav.classList.remove('active');
+                        menuToggle.classList.remove('active');
+                        document.body.style.overflow = '';
+                    });
+                });
+                
+                // Close menu when clicking outside
+                document.addEventListener('click', function(event) {
+                    const isClickInsideNav = menuToggle.contains(event.target) || mobileNav.contains(event.target);
+                    const isMenuOpen = mobileNav.classList.contains('active');
+                    
+                    if (!isClickInsideNav && isMenuOpen) {
+                        mobileNav.classList.remove('active');
+                        menuToggle.classList.remove('active');
+                        document.body.style.overflow = '';
+                    }
+                });
+            }
+        });
+
+        // Tab switching functionality
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Remove active class from all tabs and panels
+                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.content-panel').forEach(panel => panel.classList.remove('active'));
+                
+                // Add active class to clicked tab and corresponding panel
+                tab.classList.add('active');
+                const targetPanel = document.getElementById(tab.dataset.target);
+                targetPanel.classList.add('active');
+                
+                // Reset selected grid items when switching tabs
+                document.querySelectorAll('.grid-item').forEach(item => {
+                    item.classList.remove('selected');
+                });
+                
+                // Hide all grid-item-details when switching tabs
+                document.querySelectorAll('.grid-item-details').forEach(details => {
+                    details.classList.remove('visible');
+                });
+                
+                // Reset item details (no need to show default details anymore)
+                targetPanel.querySelectorAll('.item-details').forEach(detail => {
+                    detail.classList.remove('active');
+                });
+            });
+        });
+        
+        // Grid item selection and hover functionality
+        document.querySelectorAll('.grid-item').forEach(item => {
+            // Show details on click
+            item.addEventListener('click', () => {
+                // Get the parent content panel
+                const panel = item.closest('.content-panel');
+                
+                // Remove selected class from all grid items in this panel
+                panel.querySelectorAll('.grid-item').forEach(gridItem => {
+                    gridItem.classList.remove('selected');
+                });
+                
+                // Add selected class to clicked grid item
+                item.classList.add('selected');
+                
+                // Update the icon
+                const serviceIcon = panel.querySelector('.grid-item-details img');
+                serviceIcon.src = item.getAttribute('data-image');
+                
+                // Hide default details
+                const defaultDetails = panel.querySelector('.default-details');
+                if (defaultDetails) {
+                    defaultDetails.classList.add('hidden');
+                }
+                
+                // Hide all item-specific details
+                panel.querySelectorAll('.item-details').forEach(detail => {
+                    detail.classList.remove('active');
+                });
+                
+                // Show details specific to this item
+                const itemId = item.getAttribute('data-item');
+                const itemDetails = panel.querySelector(`.item-details[data-for="${itemId}"]`);
+                if (itemDetails) {
+                    itemDetails.classList.add('active');
+                }
+                
+                // Show the details container
+                const detailsContainer = panel.querySelector('.grid-item-details');
+                detailsContainer.classList.add('visible');
+            });
+            
+            // Show details on hover with same behavior
+            item.addEventListener('mouseenter', () => {
+                const panel = item.closest('.content-panel');
+                const selectedItem = panel.querySelector('.grid-item.selected');
+                
+                // Only update details if no item is currently selected
+                if (!selectedItem) {
+                    // Update the icon
+                    const serviceIcon = panel.querySelector('.grid-item-details img');
+                    serviceIcon.src = item.getAttribute('data-image');
+                    
+                    // Hide default details
+                    const defaultDetails = panel.querySelector('.default-details');
+                    if (defaultDetails) {
+                        defaultDetails.classList.add('hidden');
+                    }
+                    
+                    // Hide all item-specific details
+                    panel.querySelectorAll('.item-details').forEach(detail => {
+                        detail.classList.remove('active');
+                    });
+                    
+                    // Show details specific to this item
+                    const itemId = item.getAttribute('data-item');
+                    const itemDetails = panel.querySelector(`.item-details[data-for="${itemId}"]`);
+                    if (itemDetails) {
+                        itemDetails.classList.add('active');
+                    }
+                    
+                    // Show the details container
+                    const detailsContainer = panel.querySelector('.grid-item-details');
+                    detailsContainer.classList.add('visible');
+                }
+            });
+            
+            // Reset on mouseleave
+            item.addEventListener('mouseleave', () => {
+                const panel = item.closest('.content-panel');
+                const selectedItem = panel.querySelector('.grid-item.selected');
+                
+                // Only hide if no item is currently selected
+                if (!selectedItem) {
+                    const detailsContainer = panel.querySelector('.grid-item-details');
+                    detailsContainer.classList.remove('visible');
+                    
+                    // No need to show default details
+                    
+                    panel.querySelectorAll('.item-details').forEach(detail => {
+                        detail.classList.remove('active');
+                    });
+                }
+            });
+        });
+    </script>
+
+    <script>
+        // ...existing mobile menu and tab functionality...
+
+        // Statistics animation functionality
+        function animateStats() {
+            const statsSection = document.querySelector('.statistics-section');
+            const statItems = document.querySelectorAll('.stat-item');
+            
+            const observerOptions = {
+                threshold: 0.2,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // Animate stat items with staggered delay
+                        statItems.forEach((item, index) => {
+                            setTimeout(() => {
+                                item.classList.add('animate');
+                                animateNumber(item);
+                            }, index * 150);
+                        });
+                        
+                        // Stop observing once animation is triggered
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+            
+            if (statsSection) {
+                observer.observe(statsSection);
+            }
+        }
+        
+        function animateNumber(statItem) {
+            const numberElement = statItem.querySelector('.stat-number');
+            const targetNumber = parseInt(statItem.getAttribute('data-number'));
+            const suffix = statItem.getAttribute('data-suffix') || '';
+            
+            let currentNumber = 0;
+            const increment = targetNumber / 60; // Animation duration roughly 1 second at 60fps
+            
+            const timer = setInterval(() => {
+                currentNumber += increment;
+                
+                if (currentNumber >= targetNumber) {
+                    currentNumber = targetNumber;
+                    clearInterval(timer);
+                }
+                
+                numberElement.textContent = Math.floor(currentNumber) + suffix;
+            }, 16); // ~60fps
+        }
+        
+        // Initialize statistics animation when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            // ...existing DOMContentLoaded code...
+            animateStats();
+        });
+    
+
+    </script>
+
+    <script>
+        // ...existing code...
+
+        // Smooth scrolling for the scroll-down arrow
+        document.addEventListener('DOMContentLoaded', function() {
+            // ...existing DOMContentLoaded code...
+            
+            // Add smooth scrolling to the scroll-down arrow
+            const scrollArrow = document.querySelector('.scroll-down-arrow a');
+            if (scrollArrow) {
+                scrollArrow.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetSection = document.querySelector('#services');
+                    if (targetSection) {
+                        targetSection.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            }
+            
+            animateStats();
+        });
+    </script>
+
+</body>
+</html>
